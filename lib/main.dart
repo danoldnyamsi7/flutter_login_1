@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
               ),
               Container(
                 width: 240,
-                // height: 15,
+                // height: 18,
                 margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
                 decoration: BoxDecoration(
                     // border: Border.all(color: Colors.red),
@@ -57,67 +57,126 @@ class LoginScreen extends StatelessWidget {
                 margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
                 child: Column(
                   children: <Widget>[
-                    SizedBox(
-                      width: 240,
-                      height: 39,
-                      child: ElevatedButton(
-                          onPressed: () {},
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                              'Email Addresse',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w100,
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(
-                                Color(0xFF57C0DA),
-                              ),
-                              shape: MaterialStateProperty.all<
-                                      RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18.0),
-                              )))),
+                    // SizedBox(
+                    //   width: 240,
+                    //   height: 39,
+                    //   child: ElevatedButton(
+                    //       onPressed: () {},
+                    //       child: Align(
+                    //         alignment: Alignment.centerLeft,
+                    //         child: Text(
+                    //           'Email Addresse',
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontWeight: FontWeight.w100,
+                    //             fontSize: 13,
+                    //           ),
+                    //         ),
+                    //       ),
+                    //       style: ButtonStyle(
+                    //           backgroundColor: MaterialStateProperty.all(
+                    //             Color(0xFF57C0DA),
+                    //           ),
+                    //           shape: MaterialStateProperty.all<
+                    //                   RoundedRectangleBorder>(
+                    //               RoundedRectangleBorder(
+                    //             borderRadius: BorderRadius.circular(18.0),
+                    //           )))),
+                    // ),
+                    // SizedBox(
+                    //   height: 18,
+                    // ),
+                    // SizedBox(
+                    //   width: 240,
+                    //   height: 39,
+                    //   child: ElevatedButton(
+                    //       onPressed: () {},
+                    //       child: Align(
+                    //         alignment: Alignment.centerLeft,
+                    //         child: Text(
+                    //           'Password',
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontWeight: FontWeight.w100,
+                    //             fontSize: 13,
+                    //           ),
+                    //         ),
+                    //       ),
+                    //       style: ButtonStyle(
+                    //           backgroundColor: MaterialStateProperty.all(
+                    //             Color(0xFF57C0DA),
+                    //           ),
+                    //           shape: MaterialStateProperty.all<
+                    //                   RoundedRectangleBorder>(
+                    //               RoundedRectangleBorder(
+                    //             borderRadius: BorderRadius.circular(18.0),
+                    //           )))),
+                    // ),
+                    // SizedBox(
+                    //   height: 18,
+                    // ),
+                    Container(
+                      // width: 241,
+                      // height: 39,
+                      margin: EdgeInsets.symmetric(horizontal: 30, vertical: 8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Color.fromARGB(255, 120, 204, 228),
+                      ),
+                      child: TextField(
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w100),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Email Address',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20.0),
+                          hintStyle: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w100,
+                              color: Colors.white),
+                        ),
+                      ),
                     ),
-                    SizedBox(
-                      height: 15,
+                    // SizedBox(
+                    //   height: 18,
+                    // ),
+                    Container(
+                      // width: 241,
+                      // height: 39,
+                      margin: EdgeInsets.symmetric(horizontal: 30, vertical: 8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Color.fromARGB(255, 120, 204, 228),
+                      ),
+                      child: TextField(
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w100),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Password',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20.0),
+                          hintStyle: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w100,
+                              color: Colors.white),
+                        ),
+                      ),
                     ),
-                    SizedBox(
-                      width: 240,
-                      height: 39,
-                      child: ElevatedButton(
-                          onPressed: () {},
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                              'Password',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w100,
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(
-                                Color(0xFF57C0DA),
-                              ),
-                              shape: MaterialStateProperty.all<
-                                      RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18.0),
-                              )))),
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    SizedBox(
-                      width: 240,
-                      height: 39,
+                    // SizedBox(
+                    //   height: 18,
+                    // ),
+                    // SizedBox(
+                    //   height: 18,
+                    // ),
+                    Container(
+                      height: 50,
+                     margin: EdgeInsets.symmetric(horizontal: 35, vertical: 8),
                       child: ElevatedButton(
                           onPressed: () {},
                           child: Align(
@@ -136,11 +195,11 @@ class LoginScreen extends StatelessWidget {
                               shape: MaterialStateProperty.all<
                                       RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18.0),
+                                borderRadius: BorderRadius.circular(30.0),
                               )))),
                     ),
                     SizedBox(
-                      height: 15,
+                      height: 18,
                     ),
                   ],
                 ),
@@ -185,7 +244,9 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 15,),
+                    SizedBox(
+                      width: 18,
+                    ),
                     Container(
                       height: 40,
                       width: 40,
@@ -195,7 +256,9 @@ class LoginScreen extends StatelessWidget {
                           image: DecorationImage(
                               image: AssetImage('assets/facebook.jpg'))),
                     ),
-                    SizedBox(width: 15,),
+                    SizedBox(
+                      width: 18,
+                    ),
                     Container(
                       height: 40,
                       width: 40,
@@ -215,7 +278,7 @@ class LoginScreen extends StatelessWidget {
                   child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Don/t have an account?',
+                  Text("Don't have an account?",
                       style: TextStyle(
                           fontSize: 10,
                           color: Colors.white,
